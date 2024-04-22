@@ -1,0 +1,74 @@
+.AboutTitle {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.AboutWrapper {
+  margin-bottom: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  .CardAbout {
+    flex: 0 0 20%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    border: 1px solid #03a696;
+
+    img {
+      width: 140px;
+      height: 140px;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+  }
+  .TextArea {
+    width: 100%;
+    color: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    h4 {
+      color: #0d0d0d;
+    }
+
+    p {
+      color: #bbb;
+    }
+  }
+
+  .Social {
+    width: 60%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .AboutWrapper {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    .CardAbout {
+      min-width: 600px;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}

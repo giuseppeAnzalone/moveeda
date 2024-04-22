@@ -1,0 +1,75 @@
+.TicketInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: 100px;
+
+  .Info {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: flex-start;
+    box-shadow: rgba(255, 255, 255, 0.12) 0px -11px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 1px 16px 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    gap: 3rem;
+    background-color: #fff;
+
+    .Title {
+      width: 100%;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: #111;
+    }
+
+    .DateTime {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .InfoIcon {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 1.2rem;
+
+      h5 {
+        color: #999;
+      }
+    }
+  }
+
+  .TicketDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .TicketHr {
+      width: 90%;
+      border-top: 2px dashed #111;
+    }
+  }
+
+  .TicketCode {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 11px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 6px 16px 0px;
+    border-radius: 20px;
+    background-color: #ffffff;
+
+    svg {
+      height: 20%;
+    }
+  }
+}

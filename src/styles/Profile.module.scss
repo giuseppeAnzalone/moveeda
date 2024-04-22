@@ -1,0 +1,89 @@
+.UserWrapper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+
+  .UserBanner {
+    display: none;
+  }
+
+  .UserPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    .User {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #2cbfbf;
+      height: 200px;
+      width: 280px;
+      border-radius: 10px;
+
+      img {
+        margin-top: 10px;
+        border-radius: 50%;
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .User_Info {
+      display: flex;
+      flex-direction: column;
+      font-size: 15px;
+      align-items: center;
+      gap: 20px;
+
+      h1 {
+        border-bottom: 3px solid #2cbfbf;
+      }
+
+      .Name_Surname {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        .Info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 15px;
+          gap: 5px;
+
+          .Type {
+            border-bottom: 3px solid #2cbfbf;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .UserWrapper {
+    .UserBanner {
+      display: block;
+      width: 60%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+      }
+    }
+    .UserPage {
+      width: 40%;
+    }
+  }
+}

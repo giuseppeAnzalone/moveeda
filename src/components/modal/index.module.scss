@@ -1,0 +1,29 @@
+.Modal {
+  width: 90%;
+  height: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  .Inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .message {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

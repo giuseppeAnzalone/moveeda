@@ -1,0 +1,83 @@
+@import "../../styles/colors.module.scss";
+
+.Event {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  gap: 20px;
+
+  .PosterContainer {
+    width: 60%;
+
+    img {
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .EventInfo {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 2px;
+    p {
+      font-size: 13px;
+      color: #bbb;
+    }
+    h6 {
+      color: #9e6aff;
+    }
+    h3 {
+      font-size: 16px;
+    }
+
+    .LocationDate {
+      display: flex;
+      flex-direction: row;
+      gap: 38px;
+      font-size: 0.7em;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Event {
+    flex: 0 0 30%;
+    height: auto;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    .PosterContainer {
+      width: 100%;
+
+      img {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        max-height: 250px;
+      }
+    }
+
+    .EventInfo {
+      width: 100%;
+      padding: 10px 15px;
+      gap: 1rem;
+
+      h3 {
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      a {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

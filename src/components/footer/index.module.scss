@@ -1,0 +1,19 @@
+.Footer {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .Footer {
+    width: 100%;
+    height: 62px;
+    background-color: #03a696;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+    a {
+      color: #ffffff;
+    }
+  }
+}

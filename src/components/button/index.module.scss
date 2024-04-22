@@ -1,0 +1,20 @@
+@import "../../styles/colors.module.scss";
+
+.Button {
+  color: #fff;
+  font-weight: 700;
+  background-color: $button-color;
+  border-radius: 8px;
+  width: 140px;
+  height: 40px;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $hover-button-color;
+  }
+}
+
+.BtnDanger {
+  background-color: #bb5a5a;
+}

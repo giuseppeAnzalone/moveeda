@@ -1,0 +1,120 @@
+@import "../../styles/colors.module.scss";
+
+.Slider {
+  width: 90%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  .Overlay {
+    width: 100%;
+    height: 40%;
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 3;
+
+    p {
+      max-width: 100%;
+      height: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    a {
+      color: #ffffff;
+      font-weight: 700;
+    }
+  }
+
+  .BackgroundImage {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+
+  .Actions {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+
+    .Arrow {
+      font-size: 40px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Slider {
+    width: 100%;
+    height: 100vh;
+
+    .Overlay {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0;
+      gap: 1rem;
+
+      h5 {
+        font-size: 5rem;
+        text-align: center;
+      }
+
+      p {
+        max-width: 50%;
+        height: auto;
+        font-size: 3rem;
+      }
+
+      a {
+        border-radius: 8px;
+        padding: 10px 15px;
+        font-size: 2rem;
+        border: 3px solid $button-color;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: $button-color;
+        }
+      }
+    }
+
+    .BackgroundImage {
+      img {
+        border-radius: 0px;
+      }
+    }
+    .Actions {
+      padding: 0 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .Slider {
+    width: 100%;
+    height: 100vh;
+  }
+}

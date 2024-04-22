@@ -1,0 +1,12 @@
+.Map {
+  width: 100%;
+  height: 20vh;
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .Map {
+    height: 50vh;
+    border-radius: 0;
+  }
+}
